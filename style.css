@@ -6,6 +6,7 @@
 
 			html { 
 				 overflow-y: scroll;
+				 overflow-x: hidden;
 			}
 
 			hr {
@@ -73,13 +74,15 @@
 			.container {
 				position: relative;
 				height: 500px;
-				overflow-y: hidden;
+				overflow: hidden;
+				width: 100%;
 			}
 
 			.container_small {
 				position: relative;
-				height: 15vw;
-				overflow-y: hidden;
+				height: 300px;
+				overflow: hidden;
+				width: 100%;
 			}
 		     	
 			.parallax_my_picture {
@@ -169,7 +172,7 @@
 
 			img {
 				max-width: 100%;
-				max-height: 50%;
+				max-height: 100%;
 			}
 
 
