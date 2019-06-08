@@ -72,7 +72,7 @@
 
 			.container {
 				position: relative;
-				height: 30vw;
+				height: 400px;
 				overflow-y: hidden;
 			}
 
@@ -84,7 +84,8 @@
 		     	
 			.parallax_my_picture {
 				background-image: url("myPicture.jpg");
-				height: 30vw;
+				height: 500px;
+				width: 100%;
 				background-attachment: fixed;
 				background-position: center;
 				background-repeat: no-repeat;
