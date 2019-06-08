@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<script>
+			window.onbeforeunload = function () {
+  				window.scrollTo(0, 0);
+			}
+		</script>
+		
+		<link rel= "stylesheet" type= "text/css" href= "style.css">
+
+		<style>
+			p {
+				
+				margin-bottom: 20px;
+				margin-left: 20px;
+				margin-right: 20px;
+			}
+
+			b.par_header {
+				margin-bottom: 20px;
+				margin-right: 20px;
+				font-size: 35px;
+
+			}
+
+			a.proj_link {
+				left: 50%;
+				display: relative; 
+				color: #f2f2f2;
+				background-color: #333;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+				font-size: 17px;
+				box-shadow: 10px 10px 5px grey;
+			}
+
+			a.proj_link:hover {
+				background-color: #76A0F1;
+			}
+
+			.flex_right {
+				display: flex;
+				flex-direction: row;
+				margin-left: auto;
+				flex-direction: row-reverse;
+
+			}
+
+			.flex_left {
+				display: flex;
+				flex-direction: row;
+				margin-left: auto;
+			}
+
+			.fixed {	
+				width: 70%;
+			}
+
+			.grow {
+				display: flex;
+				flex-grow: 1;
+				text-align: center;
+				justify-content: center;
+				align-items: center;
+			}
+
+
+		</style>
+	</head>
+
+	<body>
+		<div class = "topnav">
+  			<a href="home.html">Home</a>		
+  			<a href="about.html">About</a>
+  			<a class="active" href="projects.html">Projects</a>
+			<a href="#contact">Contact</a>
+		</div>
+
+		<div class = "container_small">		
+			<div class = "parallax_james_madison"></div>
+
+			<div class = "header">
+			<p>
+			All of these projects were completed in groups consisting of 3 or 4 members and utilizing agile processes. Source code was maintained and changes were tracked using version-control systems including git, Subversion and Subclipse.
+			</p>
+
+			</div>
+		</div>
+		<hr />
+
+		<div class= "flex_left">
+			<div class= "fixed">
+				<p>
+					<b class= "par_header"> Pirex </b>
+					
+				</p>
+			</div>
+			<div class= "grow">
+				<a class= "proj_link" href= "#cont"> code </a>
+			</div>
+		</div>
+		<hr />
+		<div class= "flex_right">
+			<div class= "fixed">
+				<p>
+					<b class= "par_header"> Name That Professor </b>
+					Description of the project..
+				</p>
+			</div>
+			<div class= "grow">
+				<a class= "proj_link" href= "#cont"> code </a>
+			</div>
+		</div>
+		<hr />
+		<div class= "flex_left">
+			<div class= "fixed">
+				<p>
+					<b class= "par_header"> Your Neck of the Woods </b>
+					Description of the project..
+				</p>
+			</div>
+			<div class= "grow">
+				<a class= "proj_link" href= "#cont"> code </a>
+			</div>
+		</div>
+		<hr />
+	</body>
+
+</html>
+
+	
