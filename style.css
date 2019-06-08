@@ -138,11 +138,12 @@
   				border: 3px solid #f1f1f1;
   				position: relative;
   				top: 50%;
-				font-size: 1.6vw;
+				font-size: 2.6vw;
   				left: 80%;
   				transform: translate(-50%, -50%);
   				z-index: 2;
   				width: 30%;
+				height: 70;
   				padding: 0px;
   				text-align: center;
 				
