@@ -88,7 +88,7 @@ hr {
 		    	
 .parallax_my_picture {
 	background-image: url("myPicture.jpg");
-	height: 40vw;	
+	height: 45vw;	
 	background-attachment: fixed;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -109,7 +109,7 @@ hr {
 
 .parallax_hobbies {
 	background-image: url("kayaking.jpg");
-	height: 40vw;
+	height: 45vw;
 	background-attachment: fixed;
 	background-position: right center;
 	background-repeat: no-repeat;
@@ -154,7 +154,7 @@ hr {
 	background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
 	color: white;
 	font-weight: bold;
-	font-size:  calc(3px + 1.6vw);
+	font-size:  calc(2px + 1.6vw);
 	border: 3px solid #f1f1f1;
 	position: absolute;
 	top: 50%;
