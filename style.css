@@ -73,7 +73,7 @@
 
 			.container {
 				position: relative;
-				height: 500px;
+				height: 400px;
 				overflow-y: hidden;
 				width: 100%;
 			}
@@ -88,7 +88,6 @@
 			.parallax_my_picture {
 				background-image: url("myPicture.jpg");
 				height: 500px;	
-				width: 100%;
 				background-attachment: fixed;
 				background-position: center;
 				background-repeat: no-repeat;
@@ -142,10 +141,10 @@
   				border: 3px solid #f1f1f1;
   				position: relative;
   				top: 50%;
-				font-size: 1.6vw;
+				font-size: 1.9vw;
   				left: 80%;
   				transform: translate(-50%, -50%);
-  				z-index: 2;
+  				z-index: 0;
   				width: 30%;
 				height: 70;
   				padding: 0px;
@@ -158,7 +157,7 @@
   				background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
   				color: white;
   				font-weight: bold;
-				font-size:  1.6vw;
+				font-size:  1.9vw;
   				border: 3px solid #f1f1f1;
   				position: absolute;
   				top: 50%;
