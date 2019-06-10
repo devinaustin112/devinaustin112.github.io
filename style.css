@@ -2,7 +2,7 @@
 			body {
   				margin: 0px;
 				margin-top: 50px;
-  				font-family: Arial, Helvetica, sans-serif;
+  				font-family: Arial, Trebuchet MS, sans-serif;
 			}
 
 			html { 
@@ -61,7 +61,8 @@
 				overflow: hidden;
 			}
 
-			.text { text-align: left;
+			.text { 
+				text-align: left;
 				width: 50%;
 				height: 200px;
 				padding-left: 16px;
@@ -90,7 +91,7 @@
 				background-image: url("myPicture.jpg");
 				height: 70vw;	
 				background-attachment: fixed;
-				background-position: center;
+				background-position: center center;
 				background-repeat: no-repeat;
 				background-size: cover;
 				position: relative;
@@ -99,9 +100,10 @@
 			.parallax_james_madison {
 				background-image: url("isat.jpg");
 				height: 100%;
+				width: 100%;
 				filter: blur(3px);
 				background-attachment: fixed;
-				background-position: center;
+				background-position: center center;
 				background-repeat: no-repeat;
 				background-size: cover;
 			}
@@ -110,7 +112,7 @@
 				background-image: url("kayaking.jpg");
 				height: 70vw;
 				background-attachment: fixed;
-				background-position: center;
+				background-position: right center;
 				background-repeat: no-repeat;
 				background-size: cover;
 				position: relative;
@@ -121,15 +123,14 @@
   				background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
   				color: white;
   				font-weight: bold;
-				font-size: 1.6vw;
   				border: 3px solid #f1f1f1;
   				position: absolute;
-  				top: 50%;
-  				left: 50%;
+  				top: 50%;	
+				font-size: 1.9vw;
+				left: 50%;
   				transform: translate(-50%, -50%);
   				z-index: 1;
   				width: 80%;
-  				padding: 0px;
   				text-align: center;
 			}
 
@@ -147,7 +148,6 @@
   				transform: translate(-50%, -50%);
   				z-index: 0;
   				width: 30%;
-				height: 70;
   				padding: 0px;
   				text-align: center;
 				
