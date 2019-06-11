@@ -58,7 +58,7 @@ hr {
 	background-color: #333;
 	color: white;
 	overflow: hidden;
-        font-size: calc(20px + 10vw);
+        font-size: calc(8px + 3vw);
 }
 
 .text { 
