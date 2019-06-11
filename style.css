@@ -20,7 +20,7 @@ hr {
 	box-shadow: 5px 5px 5px grey;
 }
 
-h2 {
+h2.break {
         font-size: calc(4px + 1.6vw);
 }
 
