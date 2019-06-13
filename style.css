@@ -90,7 +90,7 @@ hr {
 .parallax_my_picture {
 	background-image: url("myPicture.jpg");
 	height: 45vw;	
-	background-attachment: fixed;
+	background-attachment: scroll;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -111,7 +111,7 @@ hr {
 .parallax_hobbies {
 	background-image: url("kayaking.jpg");
 	height: 45vw;
-	background-attachment: fixed;
+	background-attachment: scroll;
 	background-position: right center;
 	background-repeat: no-repeat;
 	background-size: cover;
