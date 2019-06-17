@@ -57,8 +57,11 @@ hr {
 	text-align: center;
 	background-color: #333;
 	color: white;
+	border-top: solid;
+	border-bottom: solid;
+	border-color: white;
 	overflow: hidden;
-        font-size: calc(10px + 1.6vw);
+        font-size: calc(8px + 1.1vw);
 }
 
 .text { 
@@ -75,21 +78,21 @@ hr {
 
 .container {
 	position: relative;
-	height: 30vw;
+	height: 40vw;
 	overflow-y: hidden;
 	width: 100%;
 }
 
 .container_small {
 	position: relative;
-	height: 20vw;
+	height: 25vw;
 	overflow: hidden;
 	width: 100%;
 }
 		    	
 .parallax_my_picture {
 	background-image: url("myPicture.jpg");
-	height: 45vw;	
+	height: 35vw;	
 	background-attachment: scroll;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -110,7 +113,7 @@ hr {
 
 .parallax_hobbies {
 	background-image: url("kayaking.jpg");
-	height: 45vw;
+	height: 35vw;
 	background-attachment: scroll;
 	background-position: right center;
 	background-repeat: no-repeat;
