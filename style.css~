@@ -1,14 +1,15 @@
 body {
   	margin: 0px;
 	margin-top: 50px;
-  	font-family: Trebuchet MS;
+  	font-family: Avantgarde, Tex Gyre Adventor, URW Gothic L, sans-serif;
 	width: 1000px;
 	margin: auto;
 }
 
 html {	
 	background-image: url("circuit.jpg");
-	background-size: cover;
+	background-size: auto;
+	background-repeat: no-repeat;
 	overflow-y: scroll;
 	overflow-x: hidden;
 	overflow: auto;
@@ -20,13 +21,14 @@ hr {
 	overflow: hidden;
 	border-style: inset;
 	border-width: 0px;
-	height: 3px;
-	background-color: #333;
+	height: 1px;
+	background-color: #e0e0e0;
 }
 
 .bold {
 	font-weight: bold;
 	margin: 10px;
+	font-size: 30px;
 }
 
 .prof {
@@ -37,7 +39,8 @@ hr {
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
-	z-index: 1;
+	z-index: 2;
+	position: relative;
 }
 
 .rounded {
@@ -52,10 +55,28 @@ hr {
 	margin-right: 15%;
 	text-align: center;
 	font-size: 20px;
-	z-index: -1;
+	z-index: 1;
 }
 
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
 
+.dropdown-content {
+	display: none;
+	position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 100;
+	 background-color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 .top {	
 	top: 0;
