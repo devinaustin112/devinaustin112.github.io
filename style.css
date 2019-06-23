@@ -32,13 +32,14 @@ hr {
 .prof {
 	border-radius: 50%;
 	border: 5px solid white;
-	width: 12%;
-	height: 12%;
+	width: 100px;
+	height: 100px;
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
 	z-index: 2;
 	position: relative;
+	top: -40px;
 }
 
 .rounded {
@@ -48,8 +49,7 @@ hr {
 	width: 60%;
 	max-width: 500px;
 	position: relative; 
-	top: -4vw;
-	padding: 5%;	
+	padding: 15px;
 	background-color: white;
 	margin-left: auto;
 	margin-right: auto;
