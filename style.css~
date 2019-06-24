@@ -1,16 +1,21 @@
 body {
-  	margin: 0px;
-	margin-top: 50px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
   	font-family: Avantgarde, Tex Gyre Adventor, URW Gothic L, sans-serif;
 }
 
-html {	
+html {
+	width: 100%;
+	height: 100%;	
 	background-image: url("circuit.jpg");
 	background-size: auto;
 	background-repeat: no-repeat;
 	overflow-y: scroll;
 	overflow-x: hidden;
-	overflow: auto;
 }
 
 hr {
@@ -32,29 +37,42 @@ hr {
 .prof {
 	border-radius: 50%;
 	border: 5px solid white;
-	width: 100px;
-	height: 100px;
+	top: -50px;
+	width: 150px;
+	height: 150px;
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
 	z-index: 2;
 	position: relative;
-	top: -40px;
+	
 }
 
 .rounded {
-	display: flex;
 	flex-direction: column;
-	border-radius: 20px;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
 	width: 60%;
 	max-width: 500px;
 	position: relative; 
 	padding: 15px;
-	background-color: white;
-	margin-left: auto;
-	margin-right: auto;
+	background-color: white;	
 	text-align: center;
 	font-size: 17px;
+	z-index: 1;
+}
+
+.menu {
+	display: flex;
+	flex-direction: column;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	padding-top: 30px;
+	background-color: white;
+	width: 60%;
+	max-width: 500px;
+	padding: 15px;
+	align-items: center;
 	z-index: 1;
 }
 
