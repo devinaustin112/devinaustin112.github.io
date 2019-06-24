@@ -47,6 +47,7 @@ hr {
 	border-top-right-radius: 20px;
 	border-top-left-radius: 20px;
 	width: 60%;
+	height: 60%;
 	max-width: 500px;
 	position: relative; 
 	padding: 15px;
