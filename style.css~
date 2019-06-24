@@ -12,6 +12,7 @@ html {
 	width: 100%;
 	height: 100%;	
 	background-image: url("circuit.jpg");
+	background-attachment: fixed;
 	background-size: auto;
 	background-repeat: no-repeat;
 	overflow-y: scroll;
@@ -68,7 +69,7 @@ hr {
 	border-bottom-left-radius: 20px;
 	border-bottom-right-radius: 20px;
 	padding-top: 30px;
-	background-color: rgba(0,0,0, 0.6);
+	background-color: rgba(0,0,0, 0.8);
 	width: 60%;
 	max-width: 500px;
 	padding: 15px;
