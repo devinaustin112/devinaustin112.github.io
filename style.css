@@ -68,6 +68,7 @@ hr {
 	background-color: rgba(0,0,0, 0.65);
 	width: 60%;
 	margin: auto;
+        margin-bottom: 20vh;
 	max-width: 500px;
 	padding: 15px;
 	align-items: center;
