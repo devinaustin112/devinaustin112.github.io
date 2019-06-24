@@ -47,7 +47,6 @@ hr {
 	border-top-right-radius: 20px;
 	border-top-left-radius: 20px;
 	width: 60%;
-	height: 60%;
 	max-width: 500px;
 	position: relative; 
 	padding: 15px;
@@ -55,6 +54,8 @@ hr {
 	transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	margin: auto;
+	margin-top: 10vh;
+	margin-bottom: 10vh;
 	background-color: white;	
 	text-align: center;
 	font-size: 17px;
