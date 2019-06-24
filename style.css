@@ -43,6 +43,7 @@ hr {
 .rounded {
 	display: flex;
 	flex-direction: column;
+	flex: 1;
 	align-items: center;
 	border-top-right-radius: 20px;
 	border-top-left-radius: 20px;
@@ -50,9 +51,9 @@ hr {
 	max-width: 500px;
 	position: relative; 
 	padding: 15px;
-	top: 20%;
+	top: 20vh;
 	margin:auto;
-	margin-bottom: 20%;
+	margin-bottom: 20vh;
 	background-color: white;	
 	text-align: center;
 	font-size: 17px;
@@ -64,9 +65,9 @@ hr {
 	flex-direction: column;
 	border-bottom-left-radius: 20px;
 	border-bottom-right-radius: 20px;
-	padding-top: 30px;
 	background-color: rgba(0,0,0, 0.65);
 	width: 60%;
+	margin: auto;
 	max-width: 500px;
 	padding: 15px;
 	align-items: center;
