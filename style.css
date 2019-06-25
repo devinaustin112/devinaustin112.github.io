@@ -60,7 +60,7 @@ hr {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	margin: 60px;
+	margin: 100px;
 	min-height: 100%;
 	flex: 0;
 }
