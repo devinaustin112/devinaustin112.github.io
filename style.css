@@ -60,7 +60,7 @@ hr {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	margin: 100px;
+	margin: 150px;
 	min-height: 100%;
 	flex: 0;
 }
@@ -215,12 +215,6 @@ hr {
 	background-color: #C1C4C4;
 	color: black;
 	font-size: 17px;
-	overflow: hidden;
-}
-
-.container_small {
-	position: relative;
-	height: 25vw;
 	overflow: hidden;
 }
 		    	
