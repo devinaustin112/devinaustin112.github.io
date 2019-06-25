@@ -10,11 +10,11 @@
 		</script>
 		
 		<link rel= "stylesheet" type= "text/css" href= "style.css">
-
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">	
+		
 		<style>
 			p.proj_desc {
 				line-height: 2;
-                                font-size: calc(1px + 1.6vw);
 				margin-bottom: 20px;
 				margin-left: 20px;
 				margin-right: 20px;
@@ -34,7 +34,6 @@
 				text-align: center;
 				padding: 14px 16px;
 				text-decoration: none;
-				font-size: calc(4px + 1.6vw);
 				box-shadow: 10px 10px 5px grey;
 			}
 
@@ -44,6 +43,7 @@
 
 			.flex_right {
 				display: flex;
+				background-color: white;
 				flex-direction: row;
 				margin-left: auto;
 				flex-direction: row-reverse;
@@ -52,6 +52,7 @@
 
 			.flex_left {
 				display: flex;
+				background-color: white;
 				flex-direction: row;
 				margin-left: auto;
 			}
@@ -73,38 +74,26 @@
 	</head>
 
 	<body>
-		<div class = "top">
-			<div class = "topnav">
-  				<a href="index.html">Home</a>		
-  				<a href="about.html">About</a>
-  				<a class="active" href="projects.html">Projects</a>
-				<a dref="contact.html">Contact</a>
-			</div>
-		</div>
-
-		<div class = "container_small">		
-			<div class = "parallax_james_madison"></div>
-
-			<div class = "header">
-			<p>
-			The following projects were completed by 3 or 4 group members and myself, utilizing agile processes. Source code was maintained and changes were tracked using version-control systems including git, Subversion and Subclipse. These projects were all written using the Java programming language.</p>
-
-			</div>
-		</div>
-		<hr />
-
-		<div class= "flex_left">
-			<div class= "fixed">
-				<p class = "proj_desc">
-					<b class= "par_header"> Pirex </b>
+		<div class="dropdown" id="navbar">
+  			<button class="dropbtn"><i class="material-icons">menu</i></button>
+  			<div class="dropdown-content">
+    				<a href="index.html">Home</a>
+    				<a href="#">Contact</a>
+    				<a href="#">About</a>
+  			</div>
+		</div>	
+		<div class="container" id="center" style="width: 70%">
+			<div class= "flex_left" id="round_top">
+				<div class= "fixed">
+					<p class = "proj_desc">
+						<b class= "par_header"> Pirex </b>
 					Pirex was completed as a semester long project in Software Engineering, CS 345, during the fall of 2017. The program itself is a ranking information retrieval system for searching small collections of full-text documents. More specifically, the system allows the storing of books from the website www.gutenburg.org and allows the retrieval and ranking of specific passages based on search criteria specified by the user. Our group was responsible for creating the GUI as well as the backend, implementing structures such as an inverted index	
-				</p>
-			</div>
+					</p>
+				</div>
 			<div class= "grow">
 				<a class= "proj_link" href= "https://github.com/devinaustin112/Pirex.git" target= "_blank"> Source Code </a>
 			</div>
 		</div>
-		<hr />
 		<div class= "flex_right">
 			<div class= "fixed">
 				<p class = "proj_desc">
@@ -116,8 +105,8 @@
 				<a class= "proj_link" href= "https://github.com/devinaustin112/Name-That-CS-Professor" target= "_blank"> Source Code </a>
 			</div>
 		</div>
-		<hr />
-		<div class= "flex_left">
+
+		<div class= "flex_left" id="round_bottom">
 			<div class= "fixed">
 				<p class = "proj_desc">
 					<b class= "par_header">What's in Your Neck of the Woods </b>
@@ -128,7 +117,7 @@
 				<a class= "proj_link" href= "https://github.com/devinaustin112/Whats-in-Your-Neck-of-the-Woods" target= "_blank"> Source Code </a>
 			</div>
 		</div>
-		<hr />
+		</div>
 	</body>
 
 </html>

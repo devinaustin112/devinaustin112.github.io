@@ -1,15 +1,17 @@
 body {
 	height: 100%;
+	margin: 0;
+	padding: 0;
   	font-family: Avantgarde, Tex Gyre Adventor, URW Gothic L, sans-serif;
 }
 
 html {
-	height: 100%;
-	background-image: url("circuit.jpg");
-	background-size: auto;
+	background-size: cover;
 	background-repeat: no-repeat;
-	overflow-y: scroll;
-	overflow-x: hidden;
+	overflow: auto;
+	margin: 0;
+	padding: 0;
+	left: 0;
 }
 
 hr {
@@ -22,11 +24,43 @@ hr {
 	background-color: #e0e0e0;
 }
 
+#home_background {
+	background-image: url("circuit.jpg");
+}
+
 .bold {
 	font-weight: bold;
 	margin: 10px;
 	font-size: 30px;
 }
+
+#round_top {
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;	
+}
+
+#round_bottom {
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+#center {
+	min-width: 200px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin: 200px;
+	min-height: 100%;
+	flex: 0;
+}
+
 
 .prof {
 	border-radius: 50%;
@@ -41,19 +75,9 @@ hr {
 }
 
 .rounded {
-	display: flex;
-	flex-direction: column;
-	flex: 1;
-	align-items: center;
 	border-top-right-radius: 20px;
 	border-top-left-radius: 20px;
-	width: 60%;
-	max-width: 500px;
-	position: relative; 
 	padding: 15px;
-	top: 20vh;
-	margin:auto;
-	margin-bottom: 20vh;
 	background-color: white;	
 	text-align: center;
 	font-size: 17px;
@@ -63,35 +87,74 @@ hr {
 .menu {
 	display: flex;
 	flex-direction: column;
+	width: 100%;
 	border-bottom-left-radius: 20px;
 	border-bottom-right-radius: 20px;
-	background-color: rgba(0,0,0, 0.65);
-	width: 60%;
-	margin: auto;
-	max-width: 500px;
-	padding: 15px;
 	align-items: center;
 	z-index: 1;
 }
 
-.dropdown {
-	position: relative;
-	display: inline-block;
+.dropbtn {
+  	background-color: rgba(0,0,0, 0);
+	color: white;
+  	padding: 16px;
+  	font-size: 16px;
+  	border: none;
+}
+
+#navbar {
+
+ 	background-color: rgba(0,0,0, 0.85);
+	position: absolute;
+	position: fixed;
+	top: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.dropdown {	
+ 	background-color: rgba(0,0,0, 0.65);
+  	display: flex;
+  	width: 100%;
+  	text-align: center;
+ 	position: relative;
+  	display: inline-block;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	z-index: 1;
 }
 
 .dropdown-content {
-	display: none;
-	position: absolute;
- 	background-color: #f9f9f9;
- 	min-width: 160px;
- 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
- 	padding: 12px 16px;
- 	z-index: 100;
-	background-color: black;
+	text-align: center;
+  	display: none;
+  	width: 100%;
+  	position: absolute;
+  	background-color: #f1f1f1;
+  	min-width: 160px;
+  	z-index: 1;
+}
+
+.dropdown-content a {
+  	color: black;
+  	padding: 12px 16px;
+  	text-decoration: none;
+  	display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: rgba(0,0,0, 0.65);
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+	display: block;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+.dropdown:hover .dropdown {
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	background-color: #3e8e41;
 }
 
 .top {	
@@ -149,12 +212,6 @@ hr {
 	color: black;
 	font-size: 17px;
 	overflow: hidden;
-}
-
-.container {
-	position: relative;
-	height: 40vw;
-	overflow-y: hidden;
 }
 
 .container_small {
