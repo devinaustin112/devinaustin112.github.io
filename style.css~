@@ -28,6 +28,10 @@ hr {
 	background-image: url("circuit.jpg");
 }
 
+#projects_background {
+	background-image: url("bandwidth.jpg")
+}
+
 .bold {
 	font-weight: bold;
 	margin: 10px;
