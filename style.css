@@ -30,7 +30,7 @@ hr {
 }
 
 #projects_background {
-	background-image: url("bandwidth.jpg")
+	background-image: url("circuit.jpg")
 }
 
 .bold {
@@ -81,7 +81,7 @@ hr {
 .rounded {
 	border-top-right-radius: 20px;
 	border-top-left-radius: 20px;
-	width: 100%;
+	padding: 15px;
 	background-color: white;	
 	text-align: center;
 	font-size: 17px;
@@ -90,6 +90,8 @@ hr {
 	animation-name: slide_down;
 	animation-duration: 2s;
 }
+
+.
 
 @keyframes slide_up {
 	from { top: 25px;}
