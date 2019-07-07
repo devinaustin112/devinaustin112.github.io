@@ -2,11 +2,46 @@
 <html id="projects_background">
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+
+		<script src="jquery-3.4.1.min.js">
+		</script>
+
 		<script>
-			window.onbeforeunload = function () {
-  				window.scrollTo(0, 0);
-			}
+		$(function() {
+			var bot = $(".project_btn_n");
+			$(".project_btn_p").click(function() {
+				$(".project_desc_p").slideToggle(200);
+				$(".project_desc_y").slideUp();
+				$(".project_desc_n").slideUp();
+				var val = $(".project_btn_n").css("border-bottom-right-radius");
+				if(val === "0px") {
+					bot.css("border-radius", "0px 0px 20px 20px");
+				} 
+			});
+			$(".project_btn_y").click(function() {
+				$(".project_desc_y").slideToggle(200);
+				$(".project_desc_p").slideUp();
+				$(".project_desc_n").slideUp();
+				var val = $(".project_btn_n").css("border-bottom-right-radius");
+				if(val === "0px") {
+					bot.css("border-radius", "0px 0px 20px 20px");
+				} 
+			});
+			$(".project_btn_n").click(function() {
+				$(".project_desc_n").slideToggle(200);
+				$(".project_desc_p").slideUp();
+				$(".project_desc_y").slideUp();
+			});
+			$(".project_btn_n").click(function() {
+				var val = $(".project_btn_n").css("border-bottom-right-radius");
+				if(val === "0px") {
+					bot.css("border-radius", "0px 0px 20px 20px");
+				} else {
+					bot.css("border-radius", "0px 0px 0px 0px");
+				}
+			});
+			
+		});
 		</script>
 		
 		<link rel= "stylesheet" type= "text/css" href= "style.css">
@@ -30,7 +65,7 @@
 				display: relative; 
 				color: #f2f2f2;
 				background-color: #333;
-				text-align: center;
+			text-align: center;
 				padding: 14px 16px;
 				text-decoration: none;
 				box-shadow: 10px 10px 5px grey;
@@ -73,7 +108,7 @@
 	</head>
 
 	<body>
-		<div class="dropdown" id="navbar">
+		<div class="dropdown" id="navbar" style="animation-name: slide_down">
   			<button class="dropbtn"><i class="material-icons">menu</i></button>
   			<div class="dropdown-content">
     				<a href="index.html">Home</a>
@@ -81,41 +116,33 @@
     				<a href="#">About</a>
   			</div>
 		</div>	
-		<div class="container" id="center" style="width: 90%">
-			<div class= "flex_left" id="round_top">
-				<div class= "fixed">
-					<p class = "proj_desc">
-						<b class= "par_header"> Pirex </b>
-					Pirex was completed as a semester long project in Software Engineering, CS 345, during the fall of 2017. The program itself is a ranking information retrieval system for searching small collections of full-text documents. More specifically, the system allows the storing of books from the website www.gutenburg.org and allows the retrieval and ranking of specific passages based on search criteria specified by the user. Our group was responsible for creating the GUI as well as the backend, implementing structures such as an inverted index	
-					</p>
-				</div>
-			<div class= "grow">
-				<a class= "proj_link" href= "https://github.com/devinaustin112/Pirex.git" target= "_blank"> Source Code </a>
+		<div class="container" id="center" style="width: 70%">
+			<div class="rounded">
+				<header class="bold">Projects</header>
+				<hr />
+				Click each to get a description and link to source code.
 			</div>
-		</div>
-		<div class= "flex_right">
-			<div class= "fixed">
-				<p class = "proj_desc">
-					<b class= "par_header"> Name That CS Professor </b>
-					Name That CS Professor was completed as a semester long project in Developing Multimedia, CS 349, during the fall of 2018. The purpose of the project was to develop an interactive application that involved both visual and auditory content. Our group chose to develop a questionaire that tested student's knowledge of the computer science department at James Madison University and and allowed personalization to enhance the user's experience.
+			<div class="project_btn_p">
+				Pirex
+			</div>
+			<div class="project_desc_p">
+				<p>Pirex was completed as a semester long project in Software Engineering, CS 345, during the fall of 2017. The program itself is a ranking information retrieval system for searching small collections of full-text documents. More specifically, the system allows the storing of books from the website www.gutenburg.org and allows the retrieval and ranking of specific passages based on search criteria specified by the user. Our group was responsible for creating the GUI as well as the backend, implementing structures such as an inverted index 
 				</p>
 			</div>
-			<div class= "grow">
-				<a class= "proj_link" href= "https://github.com/devinaustin112/Name-That-CS-Professor" target= "_blank"> Source Code </a>
+			<div class="project_btn_y">
+				Your Neck of the Woods	
 			</div>
-		</div>
-
-		<div class= "flex_left" id="round_bottom">
-			<div class= "fixed">
-				<p class = "proj_desc">
-					<b class= "par_header">What's in Your Neck of the Woods </b>
-					Whats in Your Neck of the Woods was completed as a semester long project in Database Design and Application, CS 474, during the spring of 2019.
+			<div class="project_desc_y">
+				<p>Name That CS Professor was completed as a semester long project in Developing Multimedia, CS 349, during the fall of 2018. The purpose of the project was to develop an interactive application that involved both visual and auditory content. Our group chose to develop a questionaire that tested student's knowledge of the computer science department at James Madison University and and allowed personalization to enhance the user's experience. 
 				</p>
 			</div>
-			<div class= "grow">
-				<a class= "proj_link" href= "https://github.com/devinaustin112/Whats-in-Your-Neck-of-the-Woods" target= "_blank"> Source Code </a>
+			<div class="project_btn_n" id="round_bottom">
+				Name that CS Professor
 			</div>
-		</div>
+			<div class="project_desc_n" id="round_bottom">
+				<p>Whats in Your Neck of the Woods was completed as a semester long project in Database Design and Application, CS 474, during the spring of 2019.  
+				</p>
+			</div>
 		</div>
 	</body>
 

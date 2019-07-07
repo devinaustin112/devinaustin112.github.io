@@ -1,23 +1,22 @@
 body {
-	height: 100%;
+	height: 100vh;
 	margin: 0;
 	padding: 0;
-  	font-family: Avantgarde, Tex Gyre Adventor, URW Gothic L, sans-serif;
+  	font-family: Bookman;
 }
 
 html {
+	height: 120vh;
 	background-size: cover;
 	background-repeat: no-repeat;
 	overflow-y: scroll;
 	overflow-x: hidden;
 	margin: 0;
-	padding: 0;
 	left: 0;
 }
 
 hr {
 	display: block;
-	margin-top: 10px;
 	overflow: hidden;
 	border-style: inset;
 	border-width: 0px;
@@ -31,12 +30,6 @@ hr {
 
 #projects_background {
 	background-image: url("circuit.jpg")
-}
-
-.bold {
-	font-weight: bold;
-	margin: 10px;
-	font-size: 30px;
 }
 
 #round_top {
@@ -56,14 +49,19 @@ hr {
 	margin-right: auto;
 }
 
+.bold {
+	font-weight: Georgia;
+	text-transform: uppercase;
+	margin: 10px;
+	font-size: 30px;
+}
+
 .container {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	margin: 200px;
 	min-height: 100%;
-	flex: 0;
 }
 
 .prof {
@@ -72,7 +70,6 @@ hr {
 	top: -50px;
 	width: 150px;
 	height: 150px;
-	display: block;
 	margin: auto;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	z-index: 2;
@@ -82,6 +79,8 @@ hr {
 	border-top-right-radius: 20px;
 	border-top-left-radius: 20px;
 	padding: 15px;
+	width: 100%;
+	box-sizing: border-box;
 	background-color: white;	
 	text-align: center;
 	font-size: 17px;
@@ -89,16 +88,6 @@ hr {
 	z-index: 1;
 	animation-name: slide_down;
 	animation-duration: 2s;
-}
-
-@keyframes slide_up {
-	from { top: 25px;}
-	to { top: 0px;}
-}
-
-@keyframes slide_down {
-	from { top: -50px;}
-	to { top: 0px;}
 }
 
 .menu {
@@ -119,13 +108,38 @@ hr {
   	border: none;
 }
 
-#navbar {
- 	background-color: black;
-	position: absolute;
-	position: fixed;
-	top: 0;
-	margin: 0;
-	padding: 0;
+.project_btn_p, .project_btn_y, .project_btn_n {
+	color: white;
+	box-sizing: border-box;
+	font-size: 20px;
+	position: relative;
+	transition: font-size 1s;
+	-moz-transition:font-size 1s;
+     	-webkit-transition:font-size 1s;
+        -o-transition:font-size 1s;
+	text-align: center;
+	padding: 16px;
+ 	background-color: rgba(0,0,0, 0.65);
+	width: 100%;
+	border-width: 1px;
+	border-top-style: solid;
+	border-color: white;
+	animation-name: slide_up;
+	animation-duration: 2s;
+}
+
+.project_btn_p:hover, .project_btn_y:hover, .project_btn_n:hover {
+	font-size: 25px;
+	cursor: context-menu;
+}
+
+.project_desc_p, .project_desc_y, .project_desc_n {
+	background-color: white;
+	width: 100%;
+	padding: 16px;
+	box-sizing: border-box;
+	text-align: center;
+	display: none;
 }
 
 .dropdown {	
@@ -135,13 +149,12 @@ hr {
   	text-align: center;
  	position: relative;
   	display: inline-block;
-	border-bottom-left-radius: 0px;
-	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
 	z-index: 1;
 	position: relative;
 	animation-name: slide_up;
 	animation-duration: 2s;
-
 }
 
 .dropdown-content {
@@ -149,20 +162,24 @@ hr {
   	display: none;
   	width: 100%;
   	position: absolute;
-  	background-color: #f1f1f1;
+	background-color: rgba(0,0,0, 0.65);
   	min-width: 160px;
   	z-index: 1;
 }
 
 .dropdown-content a {
-  	color: black;
+  	color: white;
   	padding: 12px 16px;
+	box-sizing: border-box;
   	text-decoration: none;
   	display: block;
 }
 
 .dropdown-content a:hover {
-	background-color: rgba(0,0,0, 0.65);
+	background-color: rgba(256,256,256, 0.65);
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+
 }
 
 .dropdown:hover .dropdown-content {
@@ -171,10 +188,9 @@ hr {
 	border-bottom-right-radius: 20px;
 }
 
-.dropdown:hover .dropdown {
-	border-bottom-left-radius: 20px;
-	border-bottom-right-radius: 20px;
-	background-color: #3e8e41;
+.dropdown:hover {
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
 }
 
 .content {
@@ -200,3 +216,12 @@ hr {
 	overflow: hidden;
 }
 
+@keyframes slide_up {
+	from { top: 25px;}
+	to { top: 0px;}
+}
+
+@keyframes slide_down {
+	from { top: -50px;}
+	to { top: 0px;}
+}
