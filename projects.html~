@@ -116,28 +116,34 @@
     				<a href="#">About</a>
   			</div>
 		</div>	
-		<div class="container" id="center" style="width: 70%">
+		<div class="container" id="center" style="width: 70%;">
 			<div class="rounded">
 				<header class="bold">Projects</header>
 				<hr />
 				Click each to get a description and link to source code.
 			</div>
 			<div class="project_btn_p">
-				Pirex
+				<img src="drawing.svg" height="100" width="200">
+				<hr style="background-color: #6f7682; width: 40%;" />
+				<p id="smaller">Software Engineering, Spring 2017</p>
 			</div>
 			<div class="project_desc_p">
 				<p>Pirex was completed as a semester long project in Software Engineering, CS 345, during the fall of 2017. The program itself is a ranking information retrieval system for searching small collections of full-text documents. More specifically, the system allows the storing of books from the website www.gutenburg.org and allows the retrieval and ranking of specific passages based on search criteria specified by the user. Our group was responsible for creating the GUI as well as the backend, implementing structures such as an inverted index 
 				</p>
 			</div>
 			<div class="project_btn_y">
-				Your Neck of the Woods	
+				<img src="drawing-1.svg" height="100" width="300">
+				<hr style="background-color: #6f7682; width: 40%;" />
+				<p id="smaller">Databases, Spring 2019</p>
 			</div>
 			<div class="project_desc_y">
 				<p>Name That CS Professor was completed as a semester long project in Developing Multimedia, CS 349, during the fall of 2018. The purpose of the project was to develop an interactive application that involved both visual and auditory content. Our group chose to develop a questionaire that tested student's knowledge of the computer science department at James Madison University and and allowed personalization to enhance the user's experience. 
 				</p>
 			</div>
 			<div class="project_btn_n" id="round_bottom">
-				Name that CS Professor
+				<img src="drawing-2.svg" height="100" width="300">
+				<hr style="background-color: #6f7682; width: 40%;" />
+				<p id="smaller">Multimedia Software Developmenti, Fall 2018</p>
 			</div>
 			<div class="project_desc_n" id="round_bottom">
 				<p>Whats in Your Neck of the Woods was completed as a semester long project in Database Design and Application, CS 474, during the spring of 2019.  
