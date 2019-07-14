@@ -7,6 +7,15 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
+
+	<div class="dropdown" id="main_drop">
+  		<button class="dropbtn"><i class="material-icons">menu</i></button>
+  		<div class="dropdown-content">
+    			<a href="projects.html">Projects</a>
+    			<a href="#">Contact</a>
+    			<a href="#">About</a>
+  		</div>
+	</div>
 	
 	<div class="container" id="center" style="width: 40%">
 		<div class="rounded">
@@ -25,8 +34,8 @@
 				</p>
 			</div>
 		</div>
-		<div class="dropdown">
-  			<button class="dropbtn"><i class="material-icons">menu</i></button>
+		<div class="dropdown" id="home_drop">
+  			<button class="dropbtn" id><i class="material-icons">menu</i></button>
   			<div class="dropdown-content">
     				<a href="projects.html">Projects</a>
     				<a href="#">Contact</a>

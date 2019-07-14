@@ -11,7 +11,7 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="121.975784mm"
    height="26.09082mm"
-   viewBox="0 0 121.975784 26.09082"
+   viewBox="0 0 121.975784 36.09082"
    version="1.1"
    id="svg3851"
    sodipodi:docname="drawing.svg"
@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="226.65211"
-     inkscape:cy="-105.77657"
+     inkscape:zoom="0.35"
+     inkscape:cx="143.08484"
+     inkscape:cy="-37.142863"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -44,7 +44,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -63,23 +63,22 @@
          id="tspan3857"
          x="78.619049"
          y="148.73146"
-         style="stroke-width:0.26458332" /></text>
+         style="stroke-width:0.26458332"></tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;font-size:30.43564796px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift Bold Condensed';letter-spacing:0px;word-spacing:0px;fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:0.47391239"
-       x="112.3667"
-       y="114.26533"
-       id="text3882"
-       transform="scale(0.88714914,1.1272062)"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;font-size:50.79999924px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift Bold Condensed';letter-spacing:0px;word-spacing:0px;fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       x="65.767853"
+       y="139.00595"
+       id="text3882"><tspan
          sodipodi:role="line"
          id="tspan3880"
-         x="112.3667"
-         y="114.26533"
-         style="fill:#f9f9f9;stroke-width:0.47391239">PIREX</tspan><tspan
+         x="65.767853"
+         y="139.00595"
+         style="stroke-width:0.26458332;fill:#f9f9f9;">PIREX</tspan><tspan
          sodipodi:role="line"
-         x="112.3667"
-         y="152.30989"
-         style="fill:#f9f9f9;stroke-width:0.47391239"
+         x="65.767853"
+         y="202.50595"
+         style="stroke-width:0.26458332;fill:#f9f9f9;"
          id="tspan3884" /></text>
   </g>
 </svg>
