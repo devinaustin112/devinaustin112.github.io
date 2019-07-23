@@ -151,6 +151,33 @@ hr {
 	display: none;
 }
 
+.links {
+	overflow: hidden;
+	position: absolute;
+	width: 10vw;
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	top: 2vw;
+	border-radius: 20px;
+}
+
+.link {
+	width: 100%;
+ 	background-color: rgba(0,0,0, 0.45);
+	color: white;
+	text-align: center;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: background-color 1s ease;
+}
+
+.link:hover {
+	background-color: black;
+}
+
 #home_drop {
 	width: 100%;
 	position: relative;
@@ -160,15 +187,12 @@ hr {
 }
 
 #main_drop {
-	width: 60px;
+	width: 5vw;
 	position: fixed;
 	display: inline-block;
-	left: 2vw;
 	top: 2vw;
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
-	animation-name: slide_down_main_drop;
-	animation-duration: 2s;
 }
 
 .dropdown {	

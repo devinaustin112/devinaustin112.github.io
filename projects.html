@@ -2,7 +2,9 @@
 <html id="projects_background">
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-
+		<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Baloo' rel='stylesheet'>
 		<script src="jquery-3.4.1.min.js">
 		</script>
 
@@ -46,65 +48,6 @@
 		
 		<link rel= "stylesheet" type= "text/css" href= "style.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">	
-		
-		<style>
-			p.proj_desc {
-				margin-bottom: 20px;
-				margin-left: 20px;
-				margin-right: 20px;
-			}
-
-			b.par_header {
-				margin-right: 20px;
-		                font-size: 18px;
-				line-height: 20px;
-			}
-
-			a.proj_link {
-				left: 50%;
-				display: relative; 
-				color: #f2f2f2;
-				background-color: #333;
-			text-align: center;
-				padding: 14px 16px;
-				text-decoration: none;
-				box-shadow: 10px 10px 5px grey;
-			}
-
-			a.proj_link:hover {
-				background-color: #76A0F1;
-			}
-
-			.flex_right {
-				display: flex;
-				background-color: white;
-				flex-direction: row;
-				margin-left: auto;
-				flex-direction: row-reverse;
-
-			}
-
-			.flex_left {
-				display: flex;
-				background-color: white;
-				flex-direction: row;
-				margin-left: auto;
-			}
-
-			.fixed {	
-				width: 70%;
-			}
-
-			.grow {
-				display: flex;
-				flex-grow: 1;
-				text-align: center;
-				justify-content: center;
-				align-items: center;
-			}
-
-
-		</style>
 	</head>
 
 	<body>
@@ -116,6 +59,18 @@
     				<a href="#">About</a>
   			</div>
 		</div>
+		<div class="links">
+			<div class="link">
+				<img src="GitHub.png" style="z-index: 3;" height="32" width="32";>
+			</div>
+			<div class="link" style="border-top: 1px solid white;">
+				<i class="material-icons">mail</i>
+			</div>
+			<div class="link" style="border-top: 1px solid white;">
+				<i class="material-icons">link</i>
+			</div>
+		</div>
+
 		<div height= "5vh" style="min-height: 2vh;">
 		</div>
 		<div class="container" id="center" style="width: 70%;">
@@ -125,7 +80,7 @@
 				Click each to get a description and link to source code.
 			</div>
 			<div class="project_btn_p">
-				<img src="drawing.svg" width="70%">
+				<p style="font-size: 80px; margin: 3px; font-family: 'Aldrich';">PIREX</p>
 				<hr style="background-color: #6f7682; width: 40%;" />
 				<p id="smaller">Software Engineering, Spring 2017</p>
 			</div>
@@ -134,7 +89,7 @@
 				</p>
 			</div>
 			<div class="project_btn_y">
-				<img src="drawing-1.svg" width="70%">
+				<p style="font-size: 30px; margin: 3px; font-family: 'Sofia';"> Your Neck of the Woods</p>
 				<hr style="background-color: #6f7682; width: 40%;" />
 				<p id="smaller">Databases, Spring 2019</p>
 			</div>
@@ -143,7 +98,7 @@
 				</p>
 			</div>
 			<div class="project_btn_n" id="round_bottom">
-				<img src="drawing-2.svg" width="50%">
+				<p style="font-size: 30px; margin: 3px; font-family: 'Baloo';">Name that CS Professor</p>
 				<hr style="background-color: #6f7682; width: 40%;" />
 				<p id="smaller">Multimedia Software Development, Fall 2018</p>
 			</div>

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html id="home_background">
 	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-
-		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">	
+		<meta name="viewport" content="width=device-width, initial-scale=1">	
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet'>
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
@@ -17,20 +17,41 @@
     			<a href="#">About</a>
   		</div>
 	</div>
-	
+	<div class="links">
+		<div class="link">
+			<img src="GitHub.png" style="z-index: 3;" height="32" width="32";>
+		</div>
+		<div class="link" style="border-top: 1px solid white;">
+			<i class="material-icons">mail</i>
+		</div>
+		<div class="link" style="border-top: 1px solid white;">
+			<i class="material-icons">link</i>	
+		</div>
+	</div>
 	<div class="container" id="center" style="width: 40%">
 		<div class="rounded">
 			<div>
-
 				<img class="prof" src="prof.png">
-				<header class="bold">
-					Devin Dyer
-				</header>
-				
+				<svg viewBox="0 0 150 30">
+					<text y="20" x="35">
+						<tspan><!--
+						--><tspan>D</tspan><!--
+						--><tspan>e</tspan><!--
+						--><tspan>v</tspan><!--
+						--><tspan>i</tspan><!--
+						--><tspan>n</tspan>
+						<tspan>D</tspan><!--
+						--><tspan>y</tspan><!--
+						--><tspan>e</tspan><!--
+						--><tspan>r</tspan><!--
+						--></tspan>		
+					</text>
+				</svg> 
+
 				Aspiring Software Engineer
 
 				<hr />
-				<p>
+				<p style="font-family: Questrial">
 				I acquired my Bachelor of Science degree in Computer Science from James Madison University in the Spring of 2019, along with a minor in mathematics. With experience in software engineering, parallel programming and multimedia software development, I aspire to be a software engineer. 
 				</p>
 			</div>
@@ -42,7 +63,8 @@
     				<a href="#">Contact</a>
     				<a href="#">About</a>
   			</div>
-		</div>	
+		</div>
 	<div>
+	
 	</body>
 </html>
