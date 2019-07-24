@@ -2,9 +2,15 @@
 <html id="projects_background">
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<link rel= "stylesheet" type= "text/css" href= "style.css">
 		<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
 		<link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
 		<link href='https://fonts.googleapis.com/css?family=Baloo' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet'>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">	
+
 		<script src="jquery-3.4.1.min.js">
 		</script>
 
@@ -42,59 +48,81 @@
 					bot.css("border-radius", "0px 0px 0px 0px");
 				}
 			});
+			$(".dropdown").click(function() {
+				var drop = $(".dropdown");
+				var val = $(".dropdown").css("border-bottom-right-radius");
+				$(".dropdown-content").slideToggle(200);			
+				if(val === "20px") {
+					drop.css("border-radius", "20px 20px 0px 0px");
+				} else {
+			
+					drop.css("border-radius", "20px 20px 20px 20px").delay(800);
+				}
+
+			});
 			
 		});
-		</script>
-		
-		<link rel= "stylesheet" type= "text/css" href= "style.css">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">	
+		</script>	
 	</head>
 
 	<body>
-		<div class="dropdown" id="main_drop" style="left: 2.5vw">
+		<div class="dropdown" id="main_drop">
   			<button class="dropbtn"><i class="material-icons">menu</i></button>
   			<div class="dropdown-content">
     				<a href="index.html">Home</a>
     				<a href="#">Contact</a>
-    				<a href="#">About</a>
   			</div>
 		</div>
-		<div class="links" style="right: 2.5vw">
-			<div class="link">
-				<img src="GitHub.png" style="z-index: 3;" height="32" width="32";>
-			</div>
-			<div class="link" style="border-top: 1px solid white;">
-				<i class="material-icons">mail</i>
-			</div>
-			<div class="link" style="border-top: 1px solid white;">
-				<i class="material-icons">link</i>
-			</div>
+		<div class="links">
+
+			<a href="https://github.com/devinaustin112">
+				<div class="link">
+					<i class="fa fa-git" style="font-size: 30px"></i>
+				</div>
+			</a>
+
+
+			<a href="mailto:dyerda112@gmail.com" style="color: white;">
+				<div class="link" style="border-top: 1px solid white;">
+					<i class="material-icons">mail</i>
+
+				</div>
+			</a>
+
+			<a href="https://www.linkedin.com/in/devin-dyer-a79a1b18a">
+				<div class="link" style="border-top: 1px solid white;">
+					<i class="fa fa-linkedin" style="font-size: 30px;"></i>
+				</div>
+			</a>
 		</div>
 
 		<div height= "5vh" style="min-height: 2vh;">
 		</div>
-		<div class="container" id="center" style="width: 70%; animation-name: slide_up; animation-duration: 2s">
+		<div class="container" id="center" style="width: 70%;">
 			<div class="rounded">
-				<header class="bold">Projects</header>
+				<header style="font-family: Questrial; margin: 15px; font-size: 32px;">
+					Projects
+				</header>
 				<hr />
+				<p style="font-family: Questrial; font-size: 12px;">
 				Click each to get a description and link to source code.
 			</div>
 			<div class="project_btn_p">
-				<p style="font-size: 60px; margin: 3px; font-family: 'Aldrich';">PIREX</p>
+				<p style="font-size: 80px; margin: 3px; font-family: 'Aldrich';">PIREX</p>
 				<hr style="background-color: #6f7682; width: 40%;" />
 				<p id="smaller">Software Engineering, Spring 2017</p>
 			</div>
 			<div class="project_desc_p">
-				<p>Pirex was completed as a semester long project in Software Engineering, CS 345, during the fall of 2017. The program itself is a ranking information retrieval system for searching small collections of full-text documents. More specifically, the system allows the storing of books from the website www.gutenburg.org and allows the retrieval and ranking of specific passages based on search criteria specified by the user. Our group was responsible for creating the GUI as well as the backend, implementing structures such as an inverted index 
+				<p>Pirex is a ranking information retrieval system for searching small collections of full-text documents. More specifically, the system allows the storing of books from the website www.gutenburg.org and allows the retrieval and ranking of specific passages based on search criteria specified by the user. Our group was responsible for creating the GUI as well as the backend, implementing structures such as an inverted index 
 				</p>
 			</div>
 			<div class="project_btn_y">
 				<p style="font-size: 30px; margin: 3px; font-family: 'Sofia';"> Your Neck of the Woods</p>
 				<hr style="background-color: #6f7682; width: 40%;" />
-				<p id="smaller">Databases, Spring 2019</p>
+				<p id="smaller">Database Design and Application, Spring 2019</p>
 			</div>
 			<div class="project_desc_y">
-				<p>Whats in Your Neck of the Woods was completed as a semester long project in Database Design and Application, CS 474, during the spring of 2019.  
+				<p>Whats in Your Neck of the Woods is a three-tier application that uses a database management system. Our group chose to design an application that would allow users to look up areas of interest within certain search criteria and analyze the crime statistics of the retrieved locations. Our group was responsible for designing the SQL tables and queries as well as a front end for allowing users to interect with the data.   
 				</p>
 			</div>
 			<div class="project_btn_n" id="round_bottom">
@@ -103,7 +131,7 @@
 				<p id="smaller">Multimedia Software Development, Fall 2018</p>
 			</div>
 			<div class="project_desc_n" id="round_bottom">
-				<p>Name That CS Professor was completed as a semester long project in Developing Multimedia, CS 349, during the fall of 2018. The purpose of the project was to develop an interactive application that involved both visual and auditory content. Our group chose to develop a questionaire that tested student's knowledge of the computer science department at James Madison University and and allowed personalization to enhance the user's experience. 
+				<p>Name That CS Professor is an interactive application that utilizes both visual and auditory content. Our group chose to develop a questionaire that tested student's knowledge of the computer science department at James Madison University and and allowed personalization to enhance the user's experience. 
 				</p>
 			</div>
 		</div>

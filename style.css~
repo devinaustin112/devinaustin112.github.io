@@ -7,6 +7,7 @@ body {
 
 html {
 	height: 100vh;
+	background-image: url("circuit.jpg");
 	background-attachment: fixed;
         background-position: center;
 	background-size: cover;
@@ -15,10 +16,6 @@ html {
 	overflow-x: hidden;
 	margin: 0;
 	left: 0;
-}
-
-svg {
-	width: 100%;
 }
 
 hr {
@@ -30,12 +27,9 @@ hr {
 	background-color: #e0e0e0;
 }
 
-#home_background {
-	background-image: url("circuit.jpg");
-}
-
-#projects_background {
-	background-image: url("circuit.jpg")
+a {
+	color: white;
+	text-decoration: none;
 }
 
 #round_top {
@@ -48,39 +42,23 @@ hr {
 	border-bottom-left-radius: 20px;
 }
 
-#center {
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 100vh;
 	min-width: 200px;
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-#smaller {
-	font-size: 16px;
-}
-
-.bold {
-	font-weight: Georgia;
-	text-transform: uppercase;
-	margin: 10px;
-	font-size: 30px;
-}
-
-.container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	min-height: 100%;
-}
-
 .prof {
 	border-radius: 50%;
 	border: 5px solid white;
-	top: -50px;
 	width: 150px;
 	height: 150px;
-	margin: auto;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	z-index: 2;
 }
@@ -135,6 +113,8 @@ hr {
 	border-width: 1px;
 	border-top-style: solid;
 	border-color: white;
+	animation-name: slide_up;
+	animation-duration: 2s;
 }
 
 .project_btn_p:hover, .project_btn_y:hover, .project_btn_n:hover {
@@ -154,10 +134,11 @@ hr {
 .links {
 	overflow: hidden;
 	position: absolute;
-	width: 10vw;
+	width: 60px;
 	position: fixed;
 	display: flex;
 	flex-direction: column;
+	right: 2vw;
 	top: 2vw;
 	border-radius: 20px;
 }
@@ -187,9 +168,10 @@ hr {
 }
 
 #main_drop {
-	width: 5vw;
+	width: 60px;
 	position: fixed;
 	display: inline-block;
+	left: 2vw;
 	top: 2vw;
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
@@ -207,13 +189,19 @@ hr {
 
 .dropdown-content {
 	transition: background-color 1s ease;
- 	background-color: rgba(0,0,0, 0.65);
+ 	background-color: black;
 	text-align: center;
   	display: none;
   	width: 100%;
   	position: absolute;
   	min-width: 160px;
   	z-index: 1;
+	overflow: hidden;
+	border-top-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	top: 8vw;
+
 }
 
 .dropdown-content a {
@@ -226,21 +214,9 @@ hr {
 
 .dropdown-content a:hover {
 	background-color: rgba(256,256,256, 0.65);
-	border-bottom-left-radius: 20px;
-	border-bottom-right-radius: 20px;
-
-}
-
-.dropdown:hover .dropdown-content {
-	display: block;
-	border-bottom-left-radius: 20px;
-	border-bottom-right-radius: 20px;
-	background-color: black;
 }
 
 .dropdown:hover {
-	border-bottom-left-radius: 0px;
-	border-bottom-right-radius: 0px;
 	background-color: black;
 }
 

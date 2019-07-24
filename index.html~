@@ -5,6 +5,26 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 		<link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet'>
 		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<script src="jquery-3.4.1.min.js">
+		</script>
+
+		<script>
+			$(function() {
+				$(".dropdown").click(function() {
+					var drop = $(".dropdown");
+					var val = $(".dropdown").css("border-bottom-right-radius");
+					$(".dropdown-content").slideToggle(200);			
+					if(val === "20px") {
+						drop.css("border-radius", "20px 20px 0px 0px");
+					} else {
+						drop.css("border-radius", "20px 20px 20px 20px").delay(800);
+					}
+				});
+			});
+
+
+		</script>
 	</head>
 	<body>
 	<div height= "5vh" style="min-height: 2vh;">
