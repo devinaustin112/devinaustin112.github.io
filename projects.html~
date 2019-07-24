@@ -18,7 +18,7 @@
 		$(function() {
 			var bot = $(".project_btn_n");
 			$(".project_btn_p").click(function() {
-				$(".project_desc_p").slideToggle(200);
+				$(".project_desc_p").slideToggle(400);
 				$(".project_desc_y").slideUp();
 				$(".project_desc_n").slideUp();
 				var val = $(".project_btn_n").css("border-bottom-right-radius");
@@ -27,7 +27,7 @@
 				} 
 			});
 			$(".project_btn_y").click(function() {
-				$(".project_desc_y").slideToggle(200);
+				$(".project_desc_y").slideToggle(400);
 				$(".project_desc_p").slideUp();
 				$(".project_desc_n").slideUp();
 				var val = $(".project_btn_n").css("border-bottom-right-radius");
@@ -36,7 +36,7 @@
 				} 
 			});
 			$(".project_btn_n").click(function() {
-				$(".project_desc_n").slideToggle(200);
+				$(".project_desc_n").slideToggle(400);
 				$(".project_desc_p").slideUp();
 				$(".project_desc_y").slideUp();
 			});
@@ -51,12 +51,14 @@
 			$(".dropdown").click(function() {
 				var drop = $(".dropdown");
 				var val = $(".dropdown").css("border-bottom-right-radius");
-				$(".dropdown-content").slideToggle(200);			
 				if(val === "20px") {
 					drop.css("border-radius", "20px 20px 0px 0px");
+					$(".dropdown-content").slideToggle(200);
 				} else {
 			
-					drop.css("border-radius", "20px 20px 20px 20px").delay(800);
+					$(".dropdown-content").slideToggle(200, function() {
+						drop.css("border-radius", "20px 20px 20px 20px").delay(800);
+					});
 				}
 
 			});
@@ -74,21 +76,17 @@
   			</div>
 		</div>
 		<div class="links">
-
 			<a href="https://github.com/devinaustin112">
 				<div class="link">
 					<i class="fa fa-git" style="font-size: 30px"></i>
 				</div>
 			</a>
-
-
 			<a href="mailto:dyerda112@gmail.com" style="color: white;">
 				<div class="link" style="border-top: 1px solid white;">
 					<i class="material-icons">mail</i>
 
 				</div>
 			</a>
-
 			<a href="https://www.linkedin.com/in/devin-dyer-a79a1b18a">
 				<div class="link" style="border-top: 1px solid white;">
 					<i class="fa fa-linkedin" style="font-size: 30px;"></i>
