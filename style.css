@@ -1,12 +1,9 @@
 body {
-	height: 100vh;
-	margin: 0;
-	padding: 0;
+	text-align: center;
   	font-family: Bookman;
 }
 
 html {
-	height: 100vh;
 	background-image: url("circuit.jpg");
 	background-attachment: fixed;
         background-position: center;
@@ -44,14 +41,12 @@ a {
 
 .container {
 	display: flex;
-	align-items: center;
-	justify-content: center;
 	flex-direction: column;
-	height: 100vh;
 	min-width: 200px;
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
+	margin: auto;
 }
 
 .prof {
@@ -139,7 +134,7 @@ a {
 	display: flex;
 	flex-direction: column;
 	right: 2vw;
-	top: 2vw;
+	top: 20px;
 	border-radius: 20px;
 }
 
@@ -172,7 +167,7 @@ a {
 	position: fixed;
 	display: inline-block;
 	left: 2vw;
-	top: 2vw;
+	top: 20px;
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
 }

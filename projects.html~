@@ -62,7 +62,22 @@
 				}
 
 			});
+
+
+			$(window).on("load, resize", function() {
+				var win = $(this);
+				if(win.width() < 500) {
+					$(".container").css("padding-left", "20vw");
+					$(".links").css("left", "2vw");
+					$(".links").css("top", "100px");
+				} else {
+					$(".container").css("padding-left", "0px");
+					$(".links").css("left", "auto");
+					$(".links").css("right", "2vw");
+					$(".links").css("top", "2vw");
+				}
 			
+			});
 		});
 		</script>	
 	</head>
@@ -93,10 +108,8 @@
 				</div>
 			</a>
 		</div>
-
-		<div height= "5vh" style="min-height: 2vh;">
-		</div>
-		<div class="container" id="center" style="width: 70%;">
+		<div class="top_container">
+		<div class="container" style="width: 70%;">
 			<div class="rounded">
 				<header style="font-family: Questrial; margin: 15px; font-size: 32px;">
 					Projects
@@ -106,7 +119,7 @@
 				Click each to get a description and link to source code.
 			</div>
 			<div class="project_btn_p">
-				<p style="font-size: 80px; margin: 3px; font-family: 'Aldrich';">PIREX</p>
+				<p style="font-size: 50px; margin: 3px; font-family: 'Aldrich';">PIREX</p>
 				<hr style="background-color: #6f7682; width: 40%;" />
 				<p id="smaller">Software Engineering, Spring 2017</p>
 			</div>
@@ -133,8 +146,6 @@
 				</p>
 			</div>
 		</div>
-		<div height= "10%" style="min-height: 10vh;">
-
 		</div>
 	</body>
 
