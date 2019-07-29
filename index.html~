@@ -14,30 +14,44 @@
 			$(function() {
 				$("#main_drop").click(function() {
 					var drop = $("#main_drop");
-					var val = drop.css("border-bottom-right-radius");	
+					var val = drop.css("border-bottom-right-radius");
+					var content = $("#main_drop").children(".dropdown-content");
+
+
 					if(val === "20px") {
 						drop.css("border-radius", "20px 20px 0px 0px");
-						$(".dropdown-content").slideToggle(200);	
+						content.slideToggle(200);	
 					} else {
-						$(".dropdown-content").slideToggle(200, function() {	
+						content.slideToggle(200, function() {	
 							drop.css("border-radius", "20px 20px 20px 20px");
+						});
+					}
+				});
+				$("#home_drop").click(function() {
+					var drop = $("#home_drop");
+					var val = drop.css("border-bottom-right-radius");
+					var content = $("#home_drop").children(".dropdown-content");
+
+
+					if(val === "20px") {
+						drop.css("border-radius", "0px 0px 0px 0px");
+						content.slideToggle(200);	
+					} else {
+						content.slideToggle(200, function() {	
+							drop.css("border-radius", "0px 0px 20px 20px");
 						});
 					}
 				});
 			});
 
-
 		</script>
 	</head>
 	<body>
-	<div height= "5vh" style="min-height: 2vh;">
-	</div>
 	<div class="dropdown" id="main_drop">
   		<button class="dropbtn"><i class="material-icons">menu</i></button>
   		<div class="dropdown-content">
     			<a href="projects.html">Projects</a>
     			<a href="#">Contact</a>
-    			<a href="#">About</a>
   		</div>
 	</div>
 	<div class="links">
@@ -57,35 +71,36 @@
 			</div>
 		</a>
 	</div>
+	<div height= "10vh" style="min-height: 10vh;">
+	</div>
 	<div class="container" id="center" style="width: 40%">
 		<div class="rounded">
-			<div>
-				<img class="prof" src="LinkedIn.jpg">
-				<header style="font-family: Questrial; margin: 15px; font-size: 32px;">
-					Devin Dyer
-				</header>
+			<img class="prof" src="LinkedIn.jpg">
+			<header style="font-family: Questrial; margin: 15px; font-size: 32px;">
+				Devin Dyer
+			</header>
 
 				
-				<header style="font-family: Questrial">
-					Aspiring Software Engineer
-				</header>
+			<header style="font-family: Questrial">
+				Aspiring Software Engineer
+			</header>
 
-				<hr />
-				<p style="font-family: Questrial">
-				I acquired my Bachelor of Science degree in Computer Science from James Madison University in the Spring of 2019, along with a minor in mathematics. With experience in software engineering, parallel programming and multimedia software development, I aspire to be a software engineer. 
-				</p>
-			</div>
+			<hr />
+			<p style="font-family: Questrial">
+			I acquired my Bachelor of Science degree in Computer Science from James Madison University in the Spring of 2019, along with a minor in mathematics. With experience in software engineering, parallel programming and multimedia software development, I aspire to be a software engineer. 
+			</p>
 		</div>
 
 		<div class="dropdown" id="home_drop">
   			<button class="dropbtn" id><i class="material-icons">menu</i></button>
-  			<div class="dropdown-content">
+  			<div class="dropdown-content" style="border-top-right-radius: 0px;">
     				<a href="projects.html">Projects</a>
     				<a href="#">Contact</a>
-    				<a href="#">About</a>
   			</div>
 		</div>
-	<div>
+	</div>
 	
+	<div height= "10vh" style="min-height: 10vh;">
+	</div>
 	</body>
 </html>

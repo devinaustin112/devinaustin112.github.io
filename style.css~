@@ -73,25 +73,6 @@ a {
 	animation-duration: 2s;
 }
 
-.menu {
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	border-bottom-left-radius: 20px;
-	border-bottom-right-radius: 20px;
-	align-items: center;
-	z-index: 1;
-}
-
-
-.dropbtn {
-  	background-color: rgba(0,0,0, 0);
-	color: white;
-  	padding: 16px;
-  	font-size: 16px;
-  	border: none;
-}
-
 .project_btn_p, .project_btn_y, .project_btn_n {
 	color: white;
 	box-sizing: border-box;
@@ -136,11 +117,12 @@ a {
 	right: 2vw;
 	top: 20px;
 	border-radius: 20px;
+	z-index: 2;
 }
 
 .link {
 	width: 100%;
- 	background-color: rgba(0,0,0, 0.45);
+ 	background-color: rgba(0,0,0, 0.65);
 	color: white;
 	text-align: center;
 	height: 60px;
@@ -170,6 +152,14 @@ a {
 	top: 20px;
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
+}
+
+.dropbtn {
+  	background-color: rgba(0,0,0, 0);
+	color: white;
+  	padding: 16px;
+  	font-size: 16px;
+  	border: none;
 }
 
 .dropdown {	
@@ -211,29 +201,6 @@ a {
 
 .dropdown:hover {
 	background-color: black;
-}
-
-.content {
-	text-align: center;
-	background-color: #333;
-	color: white;
-	border-top: solid;
-	border-bottom: solid;
-	border-color: white;
-	overflow: hidden;
-        font-size: calc(8px + 1.1vw);
-}
-
-.text { 
-	text-align: left;
-	width: 50%;
-	height: 200px;
-	padding-left: 16px;
-	padding-right: 16px;
-	background-color: #C1C4C4;
-	color: black;
-	font-size: 17px;
-	overflow: hidden;
 }
 
 @keyframes slide_up {

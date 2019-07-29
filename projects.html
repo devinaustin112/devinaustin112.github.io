@@ -62,25 +62,32 @@
 				}
 
 			});
-
-
 			$(window).on("resize", function() {
 				var win = $(this);
 				if(win.width() < 500) {
 					$(".container").css("padding-left", "20vw");
 					$(".links").css("left", "2vw");
-					$(".links").css("top", "100px");
+					$(".links").css("top", "auto");
+					$(".links").css("bottom", "20px");
+
 				} else {
 					$(".container").css("padding-left", "0px");
 					$(".links").css("left", "auto");
 					$(".links").css("right", "2vw");
-					$(".links").css("top", "2vw");
+					$(".links").css("top", "20px");
+					$(".links").css("bottom", "auto");
 				}
 			
 			}).resize();
 		});
 		</script>	
 	</head>
+
+	<style> 
+		p, header {
+			font-family: Questrial;
+		}
+	</style>
 
 	<body>
 		<div class="dropdown" id="main_drop">
@@ -108,42 +115,47 @@
 				</div>
 			</a>
 		</div>
+		<div height= "10vh" style="min-height: 10vh;">
+		</div>
 		<div class="container" style="width: 70%;">
 			<div class="rounded">
-				<header style="font-family: Questrial; margin: 15px; font-size: 32px;">
+				<header style="margin: 15px; font-size: 40px;">
 					Projects
 				</header>
 				<hr />
-				<p style="font-family: Questrial; font-size: 12px;">
-				Click each to get a description and link to source code.
+				<p>
+					Click each to get a description and link to source code.
+				</p>
 			</div>
 			<div class="project_btn_p">
-				<p style="font-size: 50px; margin: 3px; font-family: 'Aldrich';">PIREX</p>
+				<header style="font-size: 50px; margin: 3px; font-family: 'Aldrich';">PIREX</header>
 				<hr style="background-color: #6f7682; width: 40%;" />
-				<p id="smaller">Software Engineering, Spring 2017</p>
+				<p style="font-size: 16px;">Software Engineering, Spring 2017</p>
 			</div>
 			<div class="project_desc_p">
 				<p>Pirex is a ranking information retrieval system for searching small collections of full-text documents. More specifically, the system allows the storing of books from the website www.gutenburg.org and allows the retrieval and ranking of specific passages based on search criteria specified by the user. Our group was responsible for creating the GUI as well as the backend, implementing structures such as an inverted index 
 				</p>
 			</div>
 			<div class="project_btn_y">
-				<p style="font-size: 30px; margin: 3px; font-family: 'Sofia';"> Your Neck of the Woods</p>
+				<header style="font-size: 30px; margin: 3px; font-family: 'Sofia';"> Your Neck of the Woods</header>
 				<hr style="background-color: #6f7682; width: 40%;" />
-				<p id="smaller">Database Design and Application, Spring 2019</p>
+				<p style="font-size: 16px;">Database Design and Application, Spring 2019</p>
 			</div>
 			<div class="project_desc_y">
 				<p>Whats in Your Neck of the Woods is a three-tier application that uses a database management system. Our group chose to design an application that would allow users to look up areas of interest within certain search criteria and analyze the crime statistics of the retrieved locations. Our group was responsible for designing the SQL tables and queries as well as a front end for allowing users to interect with the data.   
 				</p>
 			</div>
 			<div class="project_btn_n" id="round_bottom">
-				<p style="font-size: 30px; margin: 3px; font-family: 'Baloo';">Name that CS Professor</p>
+				<header style="font-size: 30px; margin: 3px; font-family: 'Baloo';">Name that CS Professor</header>
 				<hr style="background-color: #6f7682; width: 40%;" />
-				<p id="smaller">Multimedia Software Development, Fall 2018</p>
+				<p style="font-size: 16px;">Multimedia Software Development, Fall 2018</p>
 			</div>
 			<div class="project_desc_n" id="round_bottom">
 				<p>Name That CS Professor is an interactive application that utilizes both visual and auditory content. Our group chose to develop a questionaire that tested student's knowledge of the computer science department at James Madison University and and allowed personalization to enhance the user's experience. 
 				</p>
 			</div>
+		</div>
+		<div height= "10vh" style="min-height: 10vh;">
 		</div>
 	</body>
 
