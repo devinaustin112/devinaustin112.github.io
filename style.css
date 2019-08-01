@@ -1,9 +1,11 @@
 body {
+	height: 100vh;
 	text-align: center;
   	font-family: Bookman;
 }
 
 html {
+	height: 100vh;
 	background-image: url("circuit.jpg");
 	background-attachment: fixed;
         background-position: center;
@@ -40,8 +42,6 @@ a {
 }
 
 .container {
-	display: flex;
-	flex-direction: column;
 	min-width: 200px;
 	position: relative;
 	margin-left: auto;
@@ -130,6 +130,17 @@ a {
 	align-items: center;
 	justify-content: center;
 	transition: background-color 1s ease;
+}
+
+.project_link {
+	width: 70px;
+	height: 40px;
+	color: white;
+	background-color: black;
+	border-radius: 10px;
+	display: inline-block;
+	font-size: 16px;
+	vertical-align: middle;
 }
 
 .link:hover {
