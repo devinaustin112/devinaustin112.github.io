@@ -3,8 +3,27 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet'>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+
+		<style> 
+			p, header {
+				font-family: Questrial;
+			}
+
+			p {
+				font-size: 18px;
+			}
+
+			header {
+				font-size: 26px;
+			}
+
+			a:hover p {
+				color: #fc5a03;
+			}
+		</style>
 
 		<script src="jquery-3.4.1.min.js">
 		</script>
@@ -16,13 +35,14 @@
 					var val = drop.css("border-bottom-right-radius");
 					var content = $("#main_drop").children(".dropdown-content");
 
-
 					if(val === "20px") {
 						drop.css("border-radius", "20px 20px 0px 0px");
+						drop.css("background-color", "black");
 						content.slideToggle(200);	
 					} else {
 						content.slideToggle(200, function() {	
 							drop.css("border-radius", "20px 20px 20px 20px");
+							drop.css("background-color", "rgba(0, 0, 0, 0.65)");
 						});
 					}
 				});
@@ -58,7 +78,36 @@
 				</div>
 			</a>
 		</div>
-
+		<div height="10vh" style="min-height: 10vh;">
+		</div>
+		<div class="container" style="width: 60%">
+			<div class="header">
+				<header style="margin: 15px; font-size: 40px;">
+					Contact
+				</header>
+				<hr/>
+				<p style="font-size: 16px;"> Feel free to contact me or download my resume to learn more about me or my website.</p>
+			</div>
+			<div class="contact_info">
+				<header>Email</header>
+				<hr/ width="19%">
+				<a href="mailto:dyerda112@gmail.com">
+					<p>dyerda112@gmail.com</p>
+				</a>
+				<hr/>
+				<header>GitHub account</header>
+				<hr/ width="48%">
+				<a href="https://github.com/devinaustin112">
+					<p>devinaustin112</p>
+				</a>
+				<hr/>
+				<header>Mailing address </header>
+				<hr/ width="48%">
+				<p>112 Jackson Avenue, Farmville, VA 23901
+			</div>
+		</div>
+		<div height="10vh" style="min-height: 10vh;">
+		</div>
 	</body>
 
 </html>

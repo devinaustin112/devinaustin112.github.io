@@ -20,10 +20,12 @@
 
 					if(val === "20px") {
 						drop.css("border-radius", "20px 20px 0px 0px");
+						drop.css("background-color", "black");
 						content.slideToggle(200);	
 					} else {
 						content.slideToggle(200, function() {	
 							drop.css("border-radius", "20px 20px 20px 20px");
+							drop.css("background-color", "rgba(0, 0, 0, 0.65)");
 						});
 					}
 				});
@@ -35,16 +37,20 @@
 
 					if(val === "20px") {
 						drop.css("border-radius", "0px 0px 0px 0px");
+						drop.css("background-color", "black");
 						content.slideToggle(200);	
 					} else {
 						content.slideToggle(200, function() {	
 							drop.css("border-radius", "0px 0px 20px 20px");
+							drop.css("background-color", "rgba(0, 0, 0, 0.65)");
 						});
 					}
 				});
 			});
 
 		</script>
+
+		<title>Home</title>
 	</head>
 	<body>
 		<div class="dropdown" id="main_drop">
@@ -74,7 +80,7 @@
 		<div height= "10vh" style="min-height: 10vh;">
 		</div>
 		<div class="container" style="width: 40%">
-			<div class="rounded">
+			<div class="header">
 				<img class="prof" src="LinkedIn.jpg">
 				<header style="font-family: Questrial; margin: 15px; font-size: 32px;">
 					Devin Dyer
@@ -94,7 +100,7 @@
   				<button class="dropbtn" id><i class="material-icons">menu</i></button>
   				<div class="dropdown-content" style="border-top-right-radius: 0px;">
     					<a href="projects.html">Projects</a>
-    					<a href="#">Contact</a>
+    					<a href="contact.html">Contact</a>
   				</div>
 			</div>
 		</div>

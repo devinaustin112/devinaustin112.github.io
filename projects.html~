@@ -11,6 +11,12 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">	
 
+		<style> 
+			p, header {
+				font-family: Questrial;
+			}
+		</style>
+
 		<script src="jquery-3.4.1.min.js">
 		</script>
 
@@ -53,11 +59,13 @@
 				var val = $(".dropdown").css("border-bottom-right-radius");
 				if(val === "20px") {
 					drop.css("border-radius", "20px 20px 0px 0px");
+					drop.css("background-color", "black")
 					$(".dropdown-content").slideToggle(200);
 				} else {
 			
 					$(".dropdown-content").slideToggle(200, function() {
-						drop.css("border-radius", "20px 20px 20px 20px").delay(800);
+						drop.css("border-radius", "20px 20px 20px 20px");
+						drop.css("background-color", "rgba(0, 0, 0, 0.65)");
 					});
 				}
 
@@ -80,14 +88,10 @@
 			
 			}).resize();
 		});
-		</script>	
-	</head>
+		</script>
 
-	<style> 
-		p, header {
-			font-family: Questrial;
-		}
-	</style>
+		<title>Projects</title>
+	</head>
 
 	<body>
 		<div class="dropdown" id="main_drop">
@@ -118,7 +122,7 @@
 		<div height= "10vh" style="min-height: 10vh;">
 		</div>
 		<div class="container" style="width: 70%;">
-			<div class="rounded">
+			<div class="header">
 				<header style="margin: 15px; font-size: 40px;">
 					Projects
 				</header>
@@ -151,12 +155,12 @@
 					<p style="margin: 3px;">Source Code</p>
 				</div>
 			</div>
-			<div class="project_btn_n" id="round_bottom">
+			<div class="project_btn_n" style="border-radius: 0px 0px 20px 20px;">
 				<header style="font-size: 30px; margin: 3px; font-family: 'Baloo';">Name that CS Professor</header>
 				<hr style="background-color: #6f7682; width: 40%;" />
 				<p style="font-size: 16px;">Multimedia Software Development, Fall 2018</p>
 			</div>
-			<div class="project_desc_n" id="round_bottom">
+			<div class="project_desc_n" style="border-radius: 0px 0px 20px 20px;">
 				<p>Name That CS Professor is an interactive application that utilizes both visual and auditory content. Our group chose to develop a questionaire that tested student's knowledge of the computer science department at James Madison University and and allowed personalization to enhance the user's experience. 
 				</p>
 				<div class="project_link">
