@@ -89,12 +89,18 @@
 				<p style="font-size: 16px;"> Feel free to contact me or download my resume to learn more about me or my website.</p>
 			</div>
 			<div class="contact_info">
+				<header>Resume</header>
+				<hr/ width="22%">
+				<a href="resume.docx" download>
+					<p>download</p>
+				</a>
+				<hr/>
 				<header>Email</header>
 				<hr/ width="19%">
 				<a href="mailto:dyerda112@gmail.com">
-					<p style="border: 2px solid white">dyerda112@gmail.com</p>
+					<p>dyerda112@gmail.com</p>
 				</a>
-				<hr/ width="100%">
+				<hr/>
 				<header>GitHub account</header>
 				<hr/ width="48%">
 				<a href="https://github.com/devinaustin112">
