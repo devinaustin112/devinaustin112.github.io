@@ -4,6 +4,7 @@ body {
   	font-family: Bookman;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 }
 
 html {
@@ -38,7 +39,8 @@ a {
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
-	margin: auto;
+	margin-top: 10vh;
+	margin-bottom: 10vh;
 }
 
 .prof {
@@ -70,7 +72,7 @@ a {
 	position: relative;
 	color: white;
  	background-color: rgba(0,0,0, 0.75);
-	animation-name: slide_down;
+	animation-name: slide_up;
 	animation-duration: 2s;
 }
 
