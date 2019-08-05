@@ -21,73 +21,70 @@
 		</script>
 
 		<script>
-		$(function() {
-			var bot = $(".project_btn_n");
-			$(".project_btn_p").click(function() {
-				$(".project_desc_p").slideToggle(400);
-				$(".project_desc_y").slideUp();
-				$(".project_desc_n").slideUp();
-				var val = $(".project_btn_n").css("border-bottom-right-radius");
-				if(val === "0px") {
-					bot.css("border-radius", "0px 0px 20px 20px");
-				} 
+			$(function() {
+				var bot = $(".project_btn_n");
+				$(".project_btn_p").click(function() {
+					$(".project_desc_p").slideToggle(400);
+					$(".project_desc_y").slideUp();
+					$(".project_desc_n").slideUp();
+					var val = $(".project_btn_n").css("border-bottom-right-radius");
+					if(val === "0px") {
+						bot.css("border-radius", "0px 0px 20px 20px");
+					} 
+				});
+				$(".project_btn_y").click(function() {
+					$(".project_desc_y").slideToggle(400);
+					$(".project_desc_p").slideUp();
+					$(".project_desc_n").slideUp();
+					var val = $(".project_btn_n").css("border-bottom-right-radius");
+					if(val === "0px") {
+						bot.css("border-radius", "0px 0px 20px 20px");
+					} 
+				});
+				$(".project_btn_n").click(function() {
+					$(".project_desc_n").slideToggle(400);
+					$(".project_desc_p").slideUp();
+					$(".project_desc_y").slideUp();
+				});
+				$(".project_btn_n").click(function() {
+					var val = $(".project_btn_n").css("border-bottom-right-radius");
+					if(val === "0px") {
+						bot.css("border-radius", "0px 0px 20px 20px");
+					} else {
+						bot.css("border-radius", "0px 0px 0px 0px");
+					}
+				});
+				$(".dropdown").click(function() {
+					var drop = $(".dropdown");
+					var val = $(".dropdown").css("border-bottom-right-radius");
+					if(val === "20px") {
+						drop.css("border-radius", "20px 20px 0px 0px");
+						drop.css("background-color", "black")
+						$(".dropdown-content").slideToggle(200);
+					} else {			
+							$(".dropdown-content").slideToggle(200, function() {
+							drop.css("border-radius", "20px 20px 20px 20px");
+							drop.css("background-color", "rgba(0, 0, 0, 0.65)");
+						});
+					}
+	
+				});
+				$(window).on("resize", function() {
+					var win = $(this);
+					if(win.width() < 500) {
+						$(".container").css("padding-left", "20vw");
+						$(".links").css("left", "2vw");
+						$(".links").css("top", "auto");
+						$(".links").css("bottom", "20px");
+					} else {
+						$(".container").css("padding-left", "0px");
+						$(".links").css("left", "auto");
+						$(".links").css("right", "2vw");
+						$(".links").css("top", "20px");
+						$(".links").css("bottom", "auto");
+					}			
+				}).resize();
 			});
-			$(".project_btn_y").click(function() {
-				$(".project_desc_y").slideToggle(400);
-				$(".project_desc_p").slideUp();
-				$(".project_desc_n").slideUp();
-				var val = $(".project_btn_n").css("border-bottom-right-radius");
-				if(val === "0px") {
-					bot.css("border-radius", "0px 0px 20px 20px");
-				} 
-			});
-			$(".project_btn_n").click(function() {
-				$(".project_desc_n").slideToggle(400);
-				$(".project_desc_p").slideUp();
-				$(".project_desc_y").slideUp();
-			});
-			$(".project_btn_n").click(function() {
-				var val = $(".project_btn_n").css("border-bottom-right-radius");
-				if(val === "0px") {
-					bot.css("border-radius", "0px 0px 20px 20px");
-				} else {
-					bot.css("border-radius", "0px 0px 0px 0px");
-				}
-			});
-			$(".dropdown").click(function() {
-				var drop = $(".dropdown");
-				var val = $(".dropdown").css("border-bottom-right-radius");
-				if(val === "20px") {
-					drop.css("border-radius", "20px 20px 0px 0px");
-					drop.css("background-color", "black")
-					$(".dropdown-content").slideToggle(200);
-				} else {
-			
-					$(".dropdown-content").slideToggle(200, function() {
-						drop.css("border-radius", "20px 20px 20px 20px");
-						drop.css("background-color", "rgba(0, 0, 0, 0.65)");
-					});
-				}
-
-			});
-			$(window).on("resize", function() {
-				var win = $(this);
-				if(win.width() < 500) {
-					$(".container").css("padding-left", "20vw");
-					$(".links").css("left", "2vw");
-					$(".links").css("top", "auto");
-					$(".links").css("bottom", "20px");
-
-				} else {
-					$(".container").css("padding-left", "0px");
-					$(".links").css("left", "auto");
-					$(".links").css("right", "2vw");
-					$(".links").css("top", "20px");
-					$(".links").css("bottom", "auto");
-				}
-			
-			}).resize();
-		});
 		</script>
 
 		<title>Projects</title>

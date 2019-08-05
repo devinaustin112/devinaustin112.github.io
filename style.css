@@ -3,7 +3,6 @@ body {
   	font-family: Bookman;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 }
 
 html {
@@ -35,11 +34,7 @@ a {
 
 .container {
 	min-width: 200px;
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 10vh;
-	margin-bottom: 10vh;
+	margin: auto;
 }
 
 .prof {
