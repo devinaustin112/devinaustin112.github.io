@@ -140,6 +140,11 @@ a {
 	vertical-align: middle;
 }
 
+.project_link:hover {
+	background-color: #fc5a03;
+	color: black;
+}
+
 .link:hover {
 	background-color: black;
 }
