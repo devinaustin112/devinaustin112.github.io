@@ -160,7 +160,7 @@
 				<p style="font-size: 16px;">Multimedia Software Development, Fall 2018</p>
 			</div>
 			<div class="project_desc_n" style="border-radius: 0px 0px 20px 20px;">
-				<p>Name That CS Professor is an interactive application that utilizes both visual and auditory content. Our group chose to develop a questionaire that tested student's knowledge of the computer science department at James Madison University and and allowed personalization to enhance the user's experience. 
+				<p>Name That CS Professor is an interactive application that utilizes both visual and auditory content. Our group chose to develop a questionaire that tested students' knowledge of the computer science department at James Madison University and allowed personalization to enhance the user's experience. 
 				</p>
 				<a href="https://github.com/devinaustin112/Name-That-CS-Professor">
 					<div class="project_link">
