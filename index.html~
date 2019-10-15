@@ -6,7 +6,48 @@
 		<link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet'>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">		
+		<script src="jquery-3.4.1.min.js">
+		</script>
 
+		<script>
+			$(document).ready(function() {
+				$("#main_drop").click(function() {
+					var drop = $("#main_drop");
+					var val = drop.css("border-bottom-right-radius");
+					var content = $("#main_drop").children(".dropdown-content");
+
+
+					if(val === "20px") {
+						drop.css("border-radius", "20px 20px 0px 0px");
+						drop.css("background-color", "black");
+						content.slideToggle(200);	
+					} else {
+						content.slideToggle(200, function() {	
+							drop.css("border-radius", "20px 20px 20px 20px");
+							drop.css("background-color", "rgba(0, 0, 0, 0.65)");
+						});
+					}
+				});
+				$("#home_drop").click(function() {
+					var drop = $("#home_drop");
+					var val = drop.css("border-bottom-right-radius");
+					var content = $("#home_drop").children(".dropdown-content");
+
+
+					if(val === "20px") {
+						drop.css("border-radius", "0px 0px 0px 0px");
+						drop.css("background-color", "black");
+						content.slideToggle(200);	
+					} else {
+						content.slideToggle(200, function() {	
+							drop.css("border-radius", "0px 0px 20px 20px");
+							drop.css("background-color", "rgba(0, 0, 0, 0.65)");
+						});
+					}
+				});
+			});
+
+		</script>
 		<title>Home</title>
 	</head>
 	<body>
@@ -42,7 +83,7 @@
 				</header>
 		
 				<header style="font-family: Questrial">
-					Aspiring Software Engineer
+					Aspiring Software Developer
 				</header>
 
 				<hr />
@@ -101,6 +142,5 @@
 			});
 
 		</script>
-
 	</body>
 </html>

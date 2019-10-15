@@ -131,12 +131,13 @@ a {
 .project_link {
 	width: 70px;
 	height: 40px;
-	color: white;
 	background-color: black;
+	color: white;
 	border-radius: 10px;
 	display: inline-block;
 	font-size: 15px;
 	vertical-align: middle;
+	transition: color 1s,  background-color 2s ease;
 }
 
 .project_link:hover {
